@@ -1,0 +1,34 @@
+{
+  "name": "table",
+  "plural": "tables",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "isActive": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "zoneId": {
+      "type": "any",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "zone": {
+      "type": "belongsTo",
+      "model": "zone",
+      "foreignKey": "zoneId"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

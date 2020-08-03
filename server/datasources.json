@@ -1,0 +1,7 @@
+{
+  "db": {
+    "database": "puntoSoftwareTest",
+    "name": "db",
+    "connector": "mongodb"
+  }
+}
